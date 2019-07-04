@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -g -MMD -MP -Wall -Werror=implicit -pthread -std=gnu99
+CFLAGS = -g -no-pie -MMD -MP -Wall -Werror=implicit -pthread -std=gnu99
 SRCS = main.c init.c util.c mem.c reg.c desc.c
 LIBS = checker.a
 OBJS = $(SRCS:.c=.o)
